@@ -23,7 +23,7 @@ import okhttp3.Headers;
 
 public class DetailActivity extends YouTubeBaseActivity {
     public static final String YOUTUBE_API_KEY = "AIzaSyAdMjpQicB3UKxM_rhAZxAeX3gKL-BR-SE";
-    public static final String VIDEOS_URL = "https://api.themoviedb.org/3/movie/209112/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
+    public static final String VIDEOS_URL = "https://api.themoviedb.org/3/movie/%d/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
     TextView tvTitle;
     TextView tvOverview;
     RatingBar ratingBar;
@@ -34,7 +34,7 @@ public class DetailActivity extends YouTubeBaseActivity {
         setContentView(R.layout.activity_detail);
 
         tvTitle = findViewById(R.id.tvTitle);
-        tvOverview = findViewById(R.id.tvoverview);
+        tvOverview = findViewById(R.id.tvOverview);
         ratingBar = findViewById(R.id.ratingBar);
         youTubePlayerView = findViewById(R.id.player);
 
